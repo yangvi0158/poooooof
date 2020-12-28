@@ -1,0 +1,168 @@
+@media screen and (min-width: 1480px) {
+
+	
+}
+
+
+@media screen and (max-width: 900px) {
+	
+	
+}
+
+	.all{	
+
+	}
+	.div{
+		font-size: 1.8vmin;
+		font-weight: 600;
+		letter-spacing: .5vmin;
+		width: 33%;
+		height: 30%;
+	}
+	.divlong{
+		width: 100%;
+	}
+
+	.img{
+		margin-top: 5%;
+		height: 40%;
+	}
+	.divlong .img{
+		margin-top: 2.5%;
+	}
+	.img img{
+		height: 75%;
+		margin-right: 4%;
+	}
+	.img span{
+		font-size: 1.7vmin;
+		font-weight: 500;
+		line-height: 4.5vmin;
+		display: inline-block;
+		margin-right: 7%;
+	}
+	.bottomAdd{
+		height: 10px;
+		width: 100%;
+	}
+
+@media screen and (max-width: 550px) {
+	
+	.left,.right{
+		display: none;
+		width: 0px;
+	}
+	.menu {
+		left: 0px;
+	}
+	.menu ul li{
+		width: 100%;
+		border-right: none;
+		font-size: 15pt;
+		border-bottom: solid 1px white;
+	}
+	.menu ul li:last-child{
+		border-bottom: none;
+	}
+	#hamburger:checked ~ .menuicon .menu {
+		width: 100vw;
+	}
+	.menu ul{
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	.menu ul li:first-child{
+		border-top: solid 1px white;
+		margin-top: 1px;
+	}
+	.menu ul li:last-child{
+		border-bottom: solid 1px white;
+	}
+	.menu ul li:hover{
+		background-color: black;
+	}
+	.menu ul li:hover a {
+		color: white;
+	}
+	.menu ul li:first-child:hover{
+		border-left: none;
+	}
+	.menu ul li:last-child:hover{
+		border-right: none;
+	}
+	.main{
+		margin-left: 0;
+		margin-right: 0;
+		width: 100vw;
+	}
+	
+	.all{
+		width: 85%;
+		height: 75vh;
+		margin: 5% auto;
+		
+		display: flex;
+		-ms-display: flex;
+		-moz-display: flex;
+		-webkit-display: flex;
+		
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-moz-flex-direction: row;
+		-webkit-flex-direction: row;
+		
+		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		
+		justify-content: space-between;
+		-ms-justify-content: space-between;
+		-moz-justify-content: space-between;
+		-webkit-justify-content: space-between;
+
+	}
+	.div{
+		font-size: 3vmin;
+		font-weight: 600;
+		letter-spacing: .7vmin;
+		width: 90%;
+		height: 30%;
+		display: block;
+	}
+	.divlong{
+		width: 100%;
+		margin-top: 2%;
+	}
+	.divlong:last-child{
+		margin-top: 15%;
+	}
+
+	.img{
+		margin-top: 5%;
+		height: 50%;
+	}
+	.divlong .img{
+		margin-top: 2.5%;
+	}
+	.img img{
+		height: 75%;
+		margin-right: 4%;
+	}
+	.img span{
+		font-size: 2vmin;
+		font-weight: 500;
+		line-height: 4.5vmin;
+		display: inline-block;
+		margin-right: 7%;
+	}
+	
+	.bottomAdd{
+		display: none;
+	}
+
+}
+
+

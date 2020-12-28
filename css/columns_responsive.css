@@ -1,0 +1,154 @@
+@media screen and (min-width: 1480px) {
+
+	
+}
+
+
+@media screen and (max-width: 900px) {
+	
+	
+}
+
+
+@media screen and (max-width: 550px) {
+	
+	.left,.right{
+		display: none;
+		width: 0px;
+	}
+	.menu {
+		left: 0px;
+	}
+	.menu ul li{
+		width: 100%;
+		border-right: none;
+		font-size: 15pt;
+		border-bottom: solid 1px white;
+	}
+	.menu ul li:last-child{
+		border-bottom: none;
+	}
+	#hamburger:checked ~ .menuicon .menu {
+		width: 100vw;
+	}
+	.menu ul{
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	.menu ul li:first-child{
+		border-top: solid 1px white;
+		margin-top: 1px;
+	}
+	.menu ul li:last-child{
+		border-bottom: solid 1px white;
+	}
+	.menu ul li:hover{
+		background-color: black;
+	}
+	.menu ul li:hover a {
+		color: white;
+	}
+	.menu ul li:first-child:hover{
+		border-left: none;
+	}
+	.menu ul li:last-child:hover{
+		border-right: none;
+	}
+	.main{
+		margin-left: 0;
+		margin-right: 0;
+		width: 100vw;
+	}
+	.staff,.senior{
+		width: 85%;
+	}
+	.topImg{
+		width: 85%;
+		
+	}
+	.topImg img{
+		width: 100%;
+	}
+	.topInfo{
+		display: inline-block;
+	}
+
+	.num{
+		font-size: 3vmin;
+		display: none;
+
+	}
+	.add{
+		width: 25%;
+		margin: 7% auto;
+	}
+	.category{
+		font-size: 5vmin;
+		line-height: 6.5vmin;
+	}
+	.greendiv{
+		width: 20%;
+	}
+	.brief{
+		font-size: 3.5vmin;
+		letter-spacing: .5vmin;
+		line-height: 7.5vmin;
+	}
+	.columnItem{
+		flex-direction: column;
+		margin-top: 12%;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	.columnItem_right{
+		justify-content: center;
+
+	}
+	.columnItem_right .img{
+		margin-right: 0%;
+		margin-left: 0%;
+		margin-top: 4%;
+	}
+	
+	.img{
+		width: 100%;
+		margin-right: 0%;
+	}
+	.description p{
+		font-size: 4.5vmin;
+		letter-spacing: .9vmin;
+		line-height: 3vmin;
+		font-weight: 600;
+		margin-top: 3.5%;
+		margin-bottom: 3%;
+	}
+	.description span{
+		font-size: 3vmin;
+		font-weight: 400;
+		line-height: 3vmin;
+	}
+
+	.more{
+		text-align: center;
+		margin: 13% auto;
+		font-size: 4vmin;
+		letter-spacing: .7vmin;
+		cursor: pointer;
+		width: 50%;
+	}
+	.more:hover{
+		opacity: .6;
+		transition-duration: .2s;
+	}
+	.more img{
+		width: 7%;
+		margin-right: 3%;
+	}
+	.bottomAdd{
+		font-size: 2.3vmin;
+	}
+}
+
+

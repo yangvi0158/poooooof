@@ -1,0 +1,151 @@
+@media screen and (min-width: 1480px) {
+
+	
+}
+
+
+@media screen and (max-width: 900px) {
+	
+	
+}
+
+
+@media screen and (max-width: 550px) {
+	
+	.left,.right{
+		display: none;
+		width: 0px;
+	}
+	.menu {
+		left: 0px;
+	}
+	.menu ul li{
+		width: 100%;
+		border-right: none;
+		font-size: 15pt;
+		border-bottom: solid 1px white;
+	}
+	.menu ul li:last-child{
+		border-bottom: none;
+	}
+	#hamburger:checked ~ .menuicon .menu {
+		width: 100vw;
+	}
+	.menu ul{
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	.menu ul li:first-child{
+		border-top: solid 1px white;
+		margin-top: 1px;
+	}
+	.menu ul li:last-child{
+		border-bottom: solid 1px white;
+	}
+	.menu ul li:hover{
+		background-color: black;
+	}
+	.menu ul li:hover a {
+		color: white;
+	}
+	.menu ul li:first-child:hover{
+		border-left: none;
+	}
+	.menu ul li:last-child:hover{
+		border-right: none;
+	}
+	.main{
+		margin-left: 0;
+		margin-right: 0;
+		width: 100vw;
+	}
+	.video{
+		width: 80%;
+	}
+	.projects_info{
+		width: 80%;
+	}
+	.projects_info h1{
+		font-size: 4.5vmin;
+		font-weight: 600;
+		letter-spacing: 1vmin;
+	}
+	.projects_info span{
+		font-size: 3.5vmin;
+		letter-spacing: .5vmin;
+		line-height: 7.5vmin;
+	}
+	.title{
+		padding: 6% 5%;
+		font-size: 4vmin;
+		letter-spacing: 4vmin;
+	}
+	.title img{
+		width: 6%;
+	}
+	.allproject{
+		width: 80%; 
+	}
+	.Item{
+		width: 40%;
+		margin-bottom: 15%;
+	}
+	.logo img{
+		width: 90%;
+		height: 90%;
+	}
+	.name{
+		font-size: 3vmin;
+		letter-spacing: .8vmin;
+		padding-top: 10%;
+	}
+	.dialog{
+		width: 90%;
+	}
+	.cross{
+		width: 5%;
+	}
+	.dialog h5{
+		font-size: 5vmin;
+		letter-spacing: .5vmin;
+		margin-top: -2%;
+		margin-bottom: 3%;
+	}
+	.designer{
+		font-size: 3vmin;
+		letter-spacing: .3vmin;
+	}
+	.brief{
+		font-size: 3vmin;
+		letter-spacing: .3vmin;
+		line-height: 6vmin;
+		margin-top: 2%;
+		text-align: justify;
+		-moz-text-align: justify;
+	}
+	.nodisplay{
+		user-select: none;
+		-webkit-user-select: none;
+		display: none;
+	}
+	.noname{
+		border-color: white;
+		display: none;
+	}
+	.bottomAdd{
+		height: 100px;
+	}
+	h5 span{
+		letter-spacing: .2vmin;
+	}
+	.name span{
+		letter-spacing: .1vmin;
+	}
+	.bottomAdd{
+		font-size: 2.3vmin;
+	}
+}
+
+

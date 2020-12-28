@@ -1,0 +1,108 @@
+@media screen and (min-width: 1480px) {
+	
+	.SP1,.SP2{
+	right: 5vw;
+	}
+
+	.SP3,.SP4,.SP5{
+	right: 12vw;
+	}	
+	
+	.line{
+	left: 100px;
+	top: 50px;
+	}
+	
+	.code1{
+	top: 210px;
+	left: 80px;
+	
+	}
+	.code2{
+	top: -210px;
+	left: 300px;
+	}
+	#input {
+	left: 325px;
+	}
+	
+}
+
+@media screen and (max-width: 760px) {
+	#input {
+	top: 300px;
+	left: 65%;
+	}
+	.code2{
+	display: none;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.left,.right{
+	display: none;
+	width: 0px;
+	}
+	.main{
+	margin-left: 0;
+	margin-right: 0;
+	width: 100vw;
+	}
+	.menu {
+	left: 0px;
+	}
+	.menu ul li{
+	width: 100%;
+	border-right: none;
+	font-size: 15pt;
+	border-bottom: solid 1px white;
+	}
+	.menu ul li:last-child{
+	border-bottom: none;
+	}
+	#hamburger:checked ~ .menuicon .menu {
+	width: 100vw;
+	}
+	.menu ul{
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	}
+	.menu ul li:first-child{
+	border-top: solid 1px white;
+	margin-top: 1px;
+	}
+	.menu ul li:last-child{
+	border-bottom: solid 1px white;
+	}
+	.menu ul li:hover{
+		background-color: black;
+	}
+	.menu ul li:hover a {
+		color: white;
+	}
+	.menu ul li:first-child:hover{
+	border-left: none;
+	}
+	.menu ul li:last-child:hover{
+	border-right: none;
+	}
+	
+	#input {
+	top: 300px;
+	left: 60%;
+	}
+	.line{
+	display: none;
+	}
+	.code1,.code2{
+	display: none;
+	}
+	.video-container video{
+	bottom: 0px;
+}
+
+}
+
+

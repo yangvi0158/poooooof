@@ -1,0 +1,141 @@
+@media screen and (min-width: 1480px) {
+	.section_4{
+		height: 30%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.article_1,.article_2,.article_3{
+		width: 80%;
+		margin: 0;
+		line-height: 1.3rem;
+		padding: 25px;
+	}
+	.section_2{
+		margin-top: 30px;
+	}
+	.article_1{
+	top: -2vmin;
+}
+	.article_2{
+		right: -15%;
+		top: -2vmin;
+	}
+	.picture_1{
+		width: 80%;
+		position: relative;
+		right: -20%;
+}
+	.picture_2{
+		width: 80%;
+		position: relative;
+		left: 0px;
+	}
+	.picture_3{
+		width: 80%;
+		position: relative;
+		right: -20%;
+		top: -2vmin;
+	}
+	.section_3{
+		margin-top: 30px;
+	}
+}
+
+
+
+@media screen and (max-width: 550px) {
+	.left,.right{
+		display: none;
+		width: 0px;
+	}
+	.menu {
+		left: 0px;
+	}
+	.menu ul li{
+		width: 100%;
+		border-right: none;
+		font-size: 15pt;
+		border-bottom: solid 1px white;
+	}
+	
+	.menu ul li:last-child{
+		border-bottom: none;
+	}
+	#hamburger:checked ~ .menuicon .menu {
+		width: 100vw;
+	}
+	.menu ul{
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	.menu ul li:first-child{
+		border-top: solid 1px white;
+		margin-top: 1px;
+	}
+	.menu ul li:last-child{
+		border-bottom: solid 1px white;
+	}
+	.menu ul li:hover{
+		background-color: black;
+	}
+	.menu ul li:hover a {
+		color: white;
+	}
+	.menu ul li:first-child:hover{
+		border-left: none;
+	}
+	.menu ul li:last-child:hover{
+		border-right: none;
+	}
+	.main{
+		margin-left: 0;
+		margin-right: 0;
+		width: 100vw;
+	}
+	.picture_1,.picture_2,.picture_3{
+		width: 100%;
+		right: 0px;
+		margin: 0;
+		left: 0;
+		top: 0;
+	}
+	.article_1,.article_2,.article_3{
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: 0;
+		margin: 0;
+		background-color: white;
+		color: black;
+		line-height: 7.5vmin;
+		letter-spacing: .5vmin;
+		font-size: 3.5vmin;
+	}
+	.section_3{
+		margin-top: 20px;
+	}
+	.section_4{
+		margin-top: 20px;
+		margin-bottom: 300px;
+		height: 2%;
+	}
+	.date,.price,.time,.place{
+		font-size: 3vmin;
+	}
+	h1{
+		font-size: 7vmin;
+	}
+	.h1_2{
+		margin-top: 4%;
+		margin-bottom: 8%;
+	}
+	.bottomAdd{
+		font-size: 2.3vmin;
+	}
+
+}
+
+

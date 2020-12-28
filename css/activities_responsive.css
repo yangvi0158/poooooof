@@ -1,0 +1,335 @@
+@media screen and (min-width: 1480px) {
+	.detailBot{
+		margin: 0 5% 0 18%;
+		margin-bottom: 6%;
+	}
+	.detailBot_2{
+		margin: 0 5% 0 33.5%;
+		margin-bottom: 6%;
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	.party{
+		margin-top: 25%;
+	}
+	.party_content,.lecture_content{
+		width: 100%;
+		font-size: 2vmin;
+		letter-spacing: .3vmin;
+		line-height: 5vmin;
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		
+		align-items: center;
+		-ms-align-items: center;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+	}
+	.lecture_topic{
+		padding-left: 8%;
+		border-left: solid 8px black;
+		margin-top: 25%;
+		width: 100%;
+	}
+	.lecture_time{
+		margin-left: -10%;
+	}
+	.date{
+		font-size: 10vmin;
+	}
+	.title{
+		padding: 4% 5%;
+		font-size: 2.5vmin;
+		letter-spacing: .5vmin;
+		line-height: 3.5vmin;
+	}
+	.title2{
+		font-size: 2.5vmin;
+		letter-spacing: .6vmin;
+		line-height: 3.5vmin;
+	}
+	.detailTop_title{
+		font-size: 2.6vmin;
+		font-weight: 600;
+		text-align: center;
+		-moz-text-align: center;
+		
+		margin-top: 3%;
+	}
+	.detailTop_content{
+		font-size: 2vmin;
+		letter-spacing: .2vmin;
+		line-height: 5vmin;
+		width: 90%;
+		margin: 10px auto;
+	}
+	.detailBot{
+		margin: 0 5% 0 9%;
+		margin-bottom: 6%;
+	}
+	.detailBot_2{
+		margin: 0 5% 6% 14%;
+	}
+	.topic_speaker{
+		margin-right: 5%;
+	}
+	.topicSP_img img{
+		width: 70%;
+	}
+	
+}
+
+
+@media screen and (max-width: 550px) {
+	
+	.left,.right{
+		display: none;
+		width: 0px;
+	}
+	.menu {
+		left: 0px;
+	}
+	.menu ul li{
+		width: 100%;
+		border-right: none;
+		font-size: 15pt;
+		border-bottom: solid 1px white;
+	}
+	.menu ul li:last-child{
+		border-bottom: none;
+	}
+	#hamburger:checked ~ .menuicon .menu {
+		width: 100vw;
+	}
+	.menu ul{
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	.menu ul li:first-child{
+		border-top: solid 1px white;
+		margin-top: 1px;
+	}
+	.menu ul li:last-child{
+		border-bottom: solid 1px white;
+	}
+	.menu ul li:hover{
+		background-color: black;
+	}
+	.menu ul li:hover a {
+		color: white;
+	}
+	.menu ul li:first-child:hover{
+		border-left: none;
+	}
+	.menu ul li:last-child:hover{
+		border-right: none;
+	}
+	.main{
+		margin-left: 0;
+		margin-right: 0;
+		width: 100vw;
+	}
+	
+	.party,.lecture{
+		width: 85%;
+	}
+	.party{
+		margin-top: 20%;
+	}
+	.fastnav{
+		display: none;
+	}
+	.party_title,.lecture_title{
+		font-size: 6vmin;
+		font-weight: 600;
+		letter-spacing: 1vmin;
+		margin-bottom: 30px;
+		text-align: center;
+		-moz-text-align: center;
+	}
+	.party_title span,.lecture_title span{
+		font-size: 4vmin;
+	}
+	.party_content,.lecture_content{
+		width: 100%;
+		font-size: 3.5vmin;
+		letter-spacing: .2vmin;
+		line-height: 7.5vmin;
+		display: flex;
+		-ms-display: flex;
+		-moz-display: flex;
+		-webkit-display: flex;
+		
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-moz-flex-direction: column; 
+		-webkit-flex-direction: column;
+		
+		align-items: center;
+		-ms-align-items: center;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		
+		text-align: justify;
+		-moz-text-align: justify;
+	}
+	.party_btn,.lecture_btn{
+		font-weight: 600;
+		font-size: 3.5vmin;
+		letter-spacing: 2vmin;
+	}
+	.party_main{
+		font-size: 3vmin;
+	}
+	.party_speaker1,.party_speaker2,.party_speaker3,.party_speaker4{
+		width: 100%;
+	}
+	.party_speaker3{
+		margin-top: 50px;
+	}
+	.speaker_infoTop,.speaker_infoBot{
+		font-size: 5vmin;
+		font-weight: 600;
+		letter-spacing: 1.5vmin;
+	}
+	.speaker_infoBot{
+		font-size: 3.5vmin;
+		letter-spacing: .8vmin;
+		font-weight: 500;
+	}
+
+	.lecture_time{
+		display: flex;
+		-ms-display: flex;
+		-moz-display: flex;
+		-webkit-display: flex;
+		
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-moz-flex-direction: row;
+		-webkit-flex-direction: row;
+		
+		margin-left: 0%;
+		align-items: flex-end;
+		-ms-align-items: flex-end;
+		-moz-align-items: flex-end;
+		-webkit-align-items: flex-end;
+	}	
+	.week{
+		transform: translate(8px,-11px);
+		-ms-transform: translate(8px,-11px);
+		-moz-transform: translate(8px,-11px);
+		-webkit-transform: translate(8px,-11px);
+		-o-transform: translate(8px,-11px);
+	}
+	.date{
+		font-size: 16vmin;  
+	
+	}
+	.lecture_topic{
+		border-left: 0px;
+		padding-left: 0px;
+		margin-top: 2%;
+		margin-bottom: 10%;
+	}
+	.lecture_day1{
+		display: flex;
+		-ms-display: flex;
+		-moz-display: flex;
+		-webkit-display: flex;
+		
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+	}	
+	.title{
+		padding: 5% 5%;
+		font-size: 3.8vmin;
+		letter-spacing: 1vmin;
+		line-height: 3.5vmin;
+	}
+	.title2{
+		font-size: 3vmin;
+		letter-spacing: .6vmin;
+		line-height: 3.5vmin;
+	}
+	.detailTop_title{
+		font-size: 3.5vmin;
+		letter-spacing: .5vmin;
+		font-weight: 600;
+		text-align: center;
+		-moz-text-align: center;
+		margin-top: 3%;
+	}
+	.detailTop_content{
+		font-size: 3vmin;
+		letter-spacing: .3vmin;
+		line-height: 6vmin;
+		width: 90%;
+		margin: 10px auto;
+		margin-top: 15px;
+		margin-bottom: 1px;
+		text-align: justify;
+		-moz-text-align: justify;
+	}
+	.detailBot{
+		display: flex;
+		-ms-display: flex;
+		-moz-display: flex;
+		-webkit-display: flex;
+		
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-moz-flex-direction: row;
+		-webkit-flex-direction: row;
+		margin: 0 7% 0 12%;
+		margin-bottom: 6%;
+	}
+	.detailBot_2{
+		margin: 0 5% 6% 12%;
+	}
+	.topic_speaker{
+		margin-right: 8%;
+	}
+	.topicSP_img img{
+		width: 80%;
+		display: block;
+		stroke: black;
+	}
+	.topicSP_name{
+		font-size: 3vmin;
+		font-weight: 500;
+		margin: 6% 0;
+	}
+	.topicSP_info{
+		font-size: 2.3vmin;
+		line-height: 3vmin;
+		letter-spacing: .3vmin;
+		text-align: justify;
+		-moz-text-align: justify;
+		margin-bottom: 3%;
+	}
+	.top_speakerTop{
+		font-size: 3vmin;
+	}
+	.topic1_speakername{
+		font-size: 3.5vmin;
+		letter-spacing: .5vmin;
+	}
+	.number{
+		font-size: 3vmin;
+		letter-spacing: 1vmin;
+	}
+	.bottomAdd{
+		font-size: 2.3vmin;
+	}
+}
+
+
