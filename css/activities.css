@@ -655,6 +655,7 @@ footer{
 	font-family: 'Roboto Slab', sans-serif;
 }
 .title{
+	cursor: pointer;
 	background-color: black;
 	color: white;
 	padding: 3% 5%;
@@ -679,6 +680,7 @@ footer{
     width: 6%;
 	position: absolute;
 	right: 5%;
+	pointer-events: none;
 }
 .detailTop{
 	padding: 20px 0px;

@@ -440,6 +440,7 @@ footer{
 	-moz-text-align: justify;
 }
 .title{
+	cursor: pointer;
 	padding: 3% 5%;
 	font-size: 2.8vmin;
 	letter-spacing: 2vmin;
@@ -462,6 +463,7 @@ footer{
 	position: absolute;
 	right: 5%;
 	bottom: 40%;
+	pointer-events: none;
 }
 .slidediv{
 	display: flex;
@@ -487,6 +489,7 @@ footer{
 	width: 25.1%;
 	margin: 0 auto;
 	margin-bottom: 10%;
+	cursor: pointer;
 }
 .Item:hover img{
 	transform: scale(1.2);
@@ -502,6 +505,7 @@ footer{
 	-o-transition-duration: .2s;
 }
 .logo{
+	pointer-events: none;
 	display: flex;
 	-ms-display: flex;
 	-moz-display: flex;
@@ -517,6 +521,7 @@ footer{
 	height: 80%;
 }
 .name{
+	pointer-events: none;
 	border-top: solid 1px black;
 	text-align: center;
 	font-size: 2vmin;

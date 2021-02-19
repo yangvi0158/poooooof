@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>延伸活動 Activities｜噗通</title>
 	<link rel="Shortcut Icon" type="image/x-icon" href="images/favicon.png" />
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/activities.css">
 	<link rel="stylesheet" type="text/css" href="css/activities_responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
@@ -455,41 +454,16 @@
 		});
 		//講者下拉式資訊	
 		$(document).ready(function() {
-			$(".title1").click(function() {
-				$(".detail1").slideToggle('1300', "easeInOutQuint");
-				$('.speakername1').toggleClass('white', 1000);
-			});
-
-			$(".title2").click(function() {
-				$(".detail2").slideToggle('1300', "easeInOutQuint");
-				$('.speakername2').toggleClass('white', 1000);
-			});
-
-			$(".title3").click(function() {
-				$(".detail3").slideToggle('1300', "easeInOutQuint");
-				$('.speakername3').toggleClass('white', 1000);
-			});
-
-			$(".title4").click(function() {
-				$(".detail4").slideToggle('1300', "easeInOutQuint");
-				$('.speakername4').toggleClass('white', 1000);
-			});
-
-			$(".title5").click(function() {
-				$(".detail5").slideToggle('1300', "easeInOutQuint");
-				$('.speakername5').toggleClass('white', 1000);
-			});
-
-			$(".title6").click(function() {
-				$(".detail6").slideToggle('1300', "easeInOutQuint");
-				$('.speakername6').toggleClass('white', 1000);
-			});
-
-			$(".title7").click(function() {
-				$(".detail7").slideToggle('1300', "easeInOutQuint");
-				$('.speakername7').toggleClass('white', 1000);
-			});
-
+			$(".lecture_main").click((e)=>{
+				if(e.target){
+					let arr = e.target.className.split(' ')
+					if(arr.includes("title")){
+						let num = arr[1].split('title')[1]
+						$(`.detail${num}`).slideToggle('1300', "easeInOutQuint");
+						$(`.speakername${num}`).toggleClass('white', 1000);
+					}
+				}
+			})
 		});
 
 		//快速索引

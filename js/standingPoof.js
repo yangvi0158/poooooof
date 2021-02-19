@@ -1,8 +1,7 @@
-$(".SP1").hide();
-$(".SP2").hide();
-$(".SP3").hide();
-$(".SP4").hide();
-$(".SP5").hide();
+let array = ['.SP1', '.SP2', '.SP3', '.SP4', '.SP5']
+for(let i in array){
+  $(`${array[i]}`).hide();
+}
 
 
 var percent=0;

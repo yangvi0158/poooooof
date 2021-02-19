@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
 	<title>參展作品 Projects｜噗通</title>
 	<link rel="Shortcut Icon" type="image/x-icon" href="images/favicon.png" />
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/projects.css">
 	<link rel="stylesheet" type="text/css" href="css/projects_responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
@@ -504,133 +503,39 @@
 	});	
 	
 	//slidetoggle
-	$(document).ready(function(){
-	  $(".title1").click(function(){
-		$(".detail1").slideToggle('1300',"easeInOutQuint");
-	  });
-	
-	 $(".title2").click(function(){
-		$(".detail2").slideToggle('1300',"easeInOutQuint");
-	  });
-		
-	$(".title3").click(function(){
-		$(".detail3").slideToggle('1300',"easeInOutQuint");
-	  });
-		
-	$(".title4").click(function(){
-		$(".detail4").slideToggle('1300',"easeInOutQuint");
-	  });
-		
+	$(document).ready(function() {
+		$(".allproject").click((e)=>{
+			if(e.target){
+				let arr = e.target.className.split(' ')
+				if(arr.includes("title")){
+					let num = arr[1].split('title')[1]
+					$(`.detail${num}`).slideToggle('1300', "easeInOutQuint");
+				}
+			}
+		})
 	});
 		
 	//dialog
+	let closeModal = () =>{
+		$(".darkbackground").css('display','none');
+		$(".dialog").css('display',"none");
+		$(".dialog").animate({opacity:"0"});
+	}
+
 	$(document).ready(function(){
-		$(".Item1").click(function(){
-			$(".dialog1").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			 $(".dialog1").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".Item2").click(function(){
-			$(".dialog2").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			$(".dialog2").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".Item3").click(function(){
-			$(".dialog3").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			$(".dialog3").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".Item4").click(function(){
-			$(".dialog4").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			$(".dialog4").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".Item5").click(function(){
-			$(".dialog5").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			$(".dialog5").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".Item6").click(function(){
-			$(".dialog6").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			$(".dialog6").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".Item7").click(function(){
-			$(".dialog7").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			$(".dialog7").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".Item8").click(function(){
-			$(".dialog8").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			$(".dialog8").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".Item9").click(function(){
-			$(".dialog9").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			$(".dialog9").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".Item10").click(function(){
-			$(".dialog10").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			$(".dialog10").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".Item11").click(function(){
-			$(".dialog11").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			$(".dialog11").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".Item12").click(function(){
-			$(".dialog12").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			$(".dialog12").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".Item13").click(function(){
-			$(".dialog13").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			$(".dialog13").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".Item14").click(function(){
-			$(".dialog14").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			$(".dialog14").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".Item15").click(function(){
-			$(".dialog15").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			$(".dialog15").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".Item16").click(function(){
-			$(".dialog16").css('display',"block");
-			$(".darkbackground").css('display',"block");
-			$(".dialog16").animate({opacity:"1"},700,"easeInOutQuint");
-		  });
-		
-		$(".cross").click(function(){
-			$(".darkbackground").css('display','none');
-			$(".dialog").css('display',"none");
-			$(".dialog").animate({opacity:"0"});
-		  });
-		$(".darkbackground").click(function(){
-			$(".darkbackground").css('display','none');
-			$(".dialog").css('display',"none");
-			$(".dialog").animate({opacity:"0"});
-		  });
+		$(".slidediv").click((e)=>{
+			if(e.target){
+				let arr = e.target.className.split(' ')
+				if(arr.includes("Item")){
+					let num = arr[1].split('Item')[1]
+					$(`.dialog${num}`).css('display',"block");
+					$(`.darkbackground`).css('display',"block");
+					$(`.dialog${num}`).animate({opacity:"1"},700,"easeInOutQuint");
+				}
+			}
+		})
+		$(".cross").click(()=>{closeModal()});
+		$(".darkbackground").click(()=>{closeModal()});
 	});
 	</script>
 	<script src="js/common.js"></script>
